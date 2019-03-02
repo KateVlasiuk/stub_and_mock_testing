@@ -11,4 +11,7 @@
 *.ipr
 /out/
 6.  Create projects' structure
-7.
+7.  Create new project in src/main/java
+8.  Create Main class
+9.  Create psvm in Main
+10.
