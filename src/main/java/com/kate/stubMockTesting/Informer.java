@@ -9,7 +9,11 @@ public class Informer {
 
     public String restInfo(){
         String restInfostring;
-        restInfostring = String.format("Restorant Name: %s with full capacity %d and free capacity %d",restorant.getRestirantName(),restorant.getTotalCapacity(),restorant.getFreecapacity());
+        int[] restorantCapacityResult = restorant.capacity();
+//        restInfostring = String.format("Restorant Name: %s with full capacity %d and free capacity %d",
+//                restorant.getRestirantName(), restorantCapacityResult[1], restorantCapacityResult[0]);
+       restInfostring = String.format("Restorant Name: %s with full capacity %d and free capacity %d",
+                restorant.getRestirantName(), restorant.getTotalCapacity(), restorant.getFreecapacity());
         return restInfostring;
     }
 }

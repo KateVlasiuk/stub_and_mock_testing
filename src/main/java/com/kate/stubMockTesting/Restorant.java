@@ -28,4 +28,8 @@ public class Restorant {
     public void setFreecapacity(int freecapacity) {
         this.freecapacity = freecapacity;
     }
+
+    public int[] capacity(){
+        return new int[] {freecapacity, totalCapacity};
+    }
 }
